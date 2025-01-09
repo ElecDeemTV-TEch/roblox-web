@@ -22,7 +22,7 @@ Negotiate and Trade: Once you find a potential trade partner, you can negotiate 
 Rate and Review: After each trade, rate your experience and provide feedback to help others in the community make informed decisions.
 Safe and Fair Trades
 
-# We believe in promoting a trustworthy and friendly trading environment. Our platform implements various checks and balances to minimize the risk of scams. We also provide a support system in case you encounter any issues during your trades.
+We believe in promoting a trustworthy and friendly trading environment. Our platform implements various checks and balances to minimize the risk of scams. We also provide a support system in case you encounter any issues during your trades.
 
 # Community Guidelines
 
