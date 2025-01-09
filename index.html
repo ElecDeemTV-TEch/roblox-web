@@ -45,6 +45,38 @@
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
+        .container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        h1:hover {
+            color: #45a049;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            transition: opacity 0.5s;
+        }
+
+        p:hover {
+            opacity: 0.8;
+        }
+
         .cta-button {
             display: inline-block;
             background-color: #4CAF50;
@@ -55,6 +87,7 @@
             border-radius: 5px;
             transition: background-color 0.3s, transform 0.3s;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
         }
 
         .cta-button:hover {
@@ -63,65 +96,47 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
-        /* Modální okno (formulář) */
-        #tradeFormModal {
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .trade-form {
             display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-        }
-
-        #tradeFormContent {
-            background-color: white;
             padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            max-width: 600px;
-            width: 90%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: 20px auto;
         }
 
-        input, select {
+        .trade-form input,
+        .trade-form select {
             width: 100%;
             padding: 12px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
 
-        button {
-            padding: 15px 30px;
+        .trade-form button {
             background-color: #4CAF50;
             color: white;
+            padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1.2em;
         }
 
-        button:hover {
+        .trade-form button:hover {
             background-color: #45a049;
         }
 
-        /* Tlačítko pro zobrazení modálního okna */
-        #showTradeFormButton {
-            display: inline-block;
-            background-color: #007BFF;
-            color: white;
-            padding: 20px 40px;
+        .trade-form a {
             text-decoration: none;
-            font-size: 1.5em;
-            border-radius: 5px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        #showTradeFormButton:hover {
-            background-color: #0056b3;
-            transform: translateY(-3px);
+            color: #45a049;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -132,102 +147,64 @@
     </header>
 
     <div class="container">
-    <h2>O projektu</h2>
-    <p>
-        Roblox Trading CZ/SK Projekt je otevřená komunita zaměřená na hráče, kteří se chtějí podílet na obchodování s předměty v Robloxu. Projekt je určen pro všechny, kteří mají zájem o efektivní a bezpečné obchodování v rámci Roblox platformy. Naším cílem je poskytnout českým a slovenským hráčům prostor pro vzájemné sdílení předmětů, zkušeností, tipů a informací.
-    </p>
+        <h2>O projektu</h2>
+        <p>
+            Roblox Trading CZ/SK Projekt je otevřená komunita zaměřená na hráče, kteří se chtějí podílet na obchodování s předměty v Robloxu. Projekt je určen pro všechny, kteří mají zájem o efektivní a bezpečné obchodování v rámci Roblox platformy. Naším cílem je poskytnout českým a slovenským hráčům prostor pro vzájemné sdílení předmětů, zkušeností, tipů a informací.
+        </p>
 
-    <h2>Ještě o projektu</h2>
-    <p>
-        Tento projekt si klade za cíl vytvořit bezpečné a přátelské prostředí pro hráče všech věkových kategorií. Díky naší platformě mohou uživatelé:
-    </p>
-    <ul>
-        <li>Vyměňovat si herní předměty rychle a bezpečně.</li>
-        <li>Komunikovat s ostatními hráči a sdílet své obchodní strategie.</li>
-        <li>Využívat naše návody a zdroje pro maximalizaci svého úspěchu v Roblox obchodování.</li>
-        <li>Ověřovat své nabídky pomocí Discord webhooků a zajistit tak transparentnost transakcí.</li>
-    </ul>
-    <p>
-        Naší prioritou je bezpečnost a spokojenost všech uživatelů. Přidejte se k nám a staňte se součástí naší rostoucí komunity!
-    </p>
-</div>
+        <h2>Co vám nabízíme?</h2>
+        <p>
+            Tento projekt vám nabízí řadu nástrojů a služeb zaměřených na zjednodušení procesu obchodování ve hře. Ať už jste nový hráč nebo zkušený obchodník, u nás najdete různé možnosti pro zlepšení vašeho herního zážitku:
+        </p>
+        <p>
+            Komunitní fórum pro diskuse o strategiích a výměnách, kde si můžete vyměňovat své zkušenosti a tipy s ostatními hráči.
+        </p>
+        <p>
+            Bezpečné obchodování s předměty v rámci Roblox her, díky ověřeným systémům a transparentním obchodním praktikám.
+        </p>
+        <p>
+            Rady a návody, jak obchodovat s předměty a co sledovat při výměnách, abyste se vyhnuli podvodům a zajistili si bezpečné transakce.
+        </p>
+        <p>
+            Možnost připojit se k našemu Discord serveru pro okamžitou pomoc a rady, kde můžete komunikovat s dalšími členy a získat užitečné informace.
+        </p>
 
-        <!-- Tlačítko pro zobrazení formuláře -->
-        <a href="javascript:void(0);" id="showTradeFormButton" class="cta-button">Navštivte Trading</a>
+        <h2>Jak se můžete zapojit?</h2>
+        <p>
+            Pokud máte zájem o připojení k našemu projektu, máte několik možností:
+        </p>
+        <p>
+            Staňte se součástí naší komunity na <a href="https://discord.gg/G22btsGg" target="_blank">Discordu</a>, kde můžete komunikovat s ostatními členy, diskutovat o obchodních strategiích a získat cenné rady.
+        </p>
+        <p>
+            Pokud jste vývojář nebo máte nápady na vylepšení našich nástrojů, připojte se k nám na <a href="https://github.com/ElecDeemTV-TEch/roblox-web" target="_blank">GitHubu</a> a podělte se o svůj kód, návrhy nebo opravy. Společně můžeme vytvořit lepší prostředí pro všechny uživatele.
+        </p>
 
-        <!-- Modální okno pro formulář -->
-        <div id="tradeFormModal">
-            <div id="tradeFormContent">
-                <h3>Obchodní Formulář</h3>
-                <form id="tradeForm">
-                    <label for="robloxNick">Roblox Nick:</label>
-                    <input type="text" id="robloxNick" name="robloxNick" required>
-
-                    <label for="tradeItem">Co nabízíte:</label>
-                    <input type="text" id="tradeItem" name="tradeItem" required>
-
-                    <label for="tradeForItem">Za co chcete:</label>
-                    <input type="text" id="tradeForItem" name="tradeForItem" required>
-
-                    <label for="discordNick">Discord Nick:</label>
-                    <input type="text" id="discordNick" name="discordNick" required>
-
-                    <button type="submit">Odeslat obchod</button>
-                </form>
-                <button onclick="closeTradeForm()">Zavřít</button>
-            </div>
-        </div>
+        <!-- Tlačítka pro GitHub a Trading -->
+        <a href="https://github.com/ElecDeemTV-TEch/roblox-web" target="_blank" class="cta-button">Navštivte GitHub projekt</a>
+        <button class="cta-button" onclick="document.querySelector('.trade-form').style.display = 'block'">Navštivte Trading</button>
     </div>
 
-    <script>
-        // Zobrazení modálního okna
-        document.getElementById('showTradeFormButton').addEventListener('click', function() {
-            document.getElementById('tradeFormModal').style.display = 'flex';
-        });
+    <!-- Trading Form -->
+    <div class="trade-form">
+        <h2>Trading Formulář</h2>
+        <form action="https://discord.com/api/webhooks/1326990283052810331/uk41rVXHpQxWDnmPY1CmZ9TdGHD3AsB3W0469WI99TvjLLniJ_VrjpYcDe8zXU2m5xip" method="POST">
+            <label for="robloxNick">Roblox Nick:</label>
+            <input type="text" id="robloxNick" name="robloxNick" required>
 
-        // Zavření modálního okna
-        function closeTradeForm() {
-            document.getElementById('tradeFormModal').style.display = 'none';
-        }
+            <label for="item">Co nabízíte:</label>
+            <input type="text" id="item" name="item" required>
 
-        // Odeslání formuláře
-        document.getElementById('tradeForm').addEventListener('submit', function(event) {
-            event.preventDefault();
+            <label for="itemFor">Za co nabízíte:</label>
+            <input type="text" id="itemFor" name="itemFor" required>
 
-            const robloxNick = document.getElementById('robloxNick').value;
-            const tradeItem = document.getElementById('tradeItem').value;
-            const tradeForItem = document.getElementById('tradeForItem').value;
-            const discordNick = document.getElementById('discordNick').value;
+            <label for="discordNick">Discord Nick:</label>
+            <input type="text" id="discordNick" name="discordNick" required>
 
-            const webhookUrl = 'https://discord.com/api/webhooks/1326990283052810331/uk41rVXHpQxWDnmPY1CmZ9TdGHD3AsB3W0469WI99TvjLLniJ_VrjpYcDe8zXU2m5xip';
-
-            const tradeData = {
-                username: robloxNick,
-                trade_item: tradeItem,
-                trade_for: tradeForItem,
-                discord_nick: discordNick
-            };
-
-            fetch(webhookUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    content: `Nový obchod:\nRoblox Nick: ${tradeData.username}\nCo nabízí: ${tradeData.trade_item}\nZa co chce: ${tradeData.trade_for}\nDiscord Nick: ${tradeData.discord_nick}`
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert('Obchod byl odeslán!');
-                closeTradeForm();
-            })
-            .catch(error => {
-                alert('Chyba při odesílání obchodu.');
-                console.error(error);
-            });
-        });
-    </script>
+            <button type="submit">Odeslat nabídku</button>
+        </form>
+        <a href="#" onclick="document.querySelector('.trade-form').style.display = 'none'">Zavřít</a>
+    </div>
 
 </body>
 </html>
