@@ -42,22 +42,11 @@
             background-color: white;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-
-        .container:hover {
-            transform: scale(1.02);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
         }
 
         h1 {
             font-size: 3.5em;
             margin-bottom: 15px;
-            transition: color 0.3s;
-        }
-
-        h1:hover {
-            color: #45a049;
         }
 
         h2 {
@@ -70,11 +59,12 @@
             font-size: 1.5em;
             line-height: 1.8;
             margin-bottom: 30px;
-            transition: opacity 0.5s;
         }
 
-        p:hover {
-            opacity: 0.8;
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
         }
 
         .cta-button {
@@ -99,6 +89,44 @@
         html {
             scroll-behavior: smooth;
         }
+
+        .trading-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .trading-form label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .trading-form input, .trading-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .trading-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .trading-form button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -108,43 +136,50 @@
     </header>
 
     <div class="container">
-        <h2>O projektu</h2>
-        <p>
-            Roblox Trading CZ/SK Projekt je otevřená komunita zaměřená na hráče, kteří se chtějí podílet na obchodování s předměty v Robloxu. Projekt je určen pro všechny, kteří mají zájem o efektivní a bezpečné obchodování v rámci Roblox platformy. Naším cílem je poskytnout českým a slovenským hráčům prostor pro vzájemné sdílení předmětů, zkušeností, tipů a informací.
-        </p>
+    <h2>O projektu</h2>
+    <p>
+        Roblox Trading CZ/SK Projekt je otevřená komunita zaměřená na hráče, kteří se chtějí podílet na obchodování s předměty v Robloxu. Projekt je určen pro všechny, kteří mají zájem o efektivní a bezpečné obchodování v rámci Roblox platformy. Naším cílem je poskytnout českým a slovenským hráčům prostor pro vzájemné sdílení předmětů, zkušeností, tipů a informací.
+    </p>
 
-        <h2>Co vám nabízíme?</h2>
-        <p>
-            Tento projekt vám nabízí řadu nástrojů a služeb zaměřených na zjednodušení procesu obchodování ve hře. Ať už jste nový hráč nebo zkušený obchodník, u nás najdete různé možnosti pro zlepšení vašeho herního zážitku:
-        </p>
-        <p>
-            Komunitní fórum pro diskuse o strategiích a výměnách, kde si můžete vyměňovat své zkušenosti a tipy s ostatními hráči.
-        </p>
-        <p>
-            Bezpečné obchodování s předměty v rámci Roblox her, díky ověřeným systémům a transparentním obchodním praktikám.
-        </p>
-        <p>
-            Rady a návody, jak obchodovat s předměty a co sledovat při výměnách, abyste se vyhnuli podvodům a zajistili si bezpečné transakce.
-        </p>
-        <p>
-            Možnost připojit se k našemu Discord serveru pro okamžitou pomoc a rady, kde můžete komunikovat s dalšími členy a získat užitečné informace.
-        </p>
+    <h2>Ještě o projektu</h2>
+    <p>
+        Tento projekt si klade za cíl vytvořit bezpečné a přátelské prostředí pro hráče všech věkových kategorií. Díky naší platformě mohou uživatelé:
+    </p>
+    <ul>
+        <li>Vyměňovat si herní předměty rychle a bezpečně.</li>
+        <li>Komunikovat s ostatními hráči a sdílet své obchodní strategie.</li>
+        <li>Využívat naše návody a zdroje pro maximalizaci svého úspěchu v Roblox obchodování.</li>
+        <li>Ověřovat své nabídky pomocí Discord webhooků a zajistit tak transparentnost transakcí.</li>
+    </ul>
+    <p>
+        Naší prioritou je bezpečnost a spokojenost všech uživatelů. Přidejte se k nám a staňte se součástí naší rostoucí komunity!
+    </p>
+</div>
 
-        <h2>Jak se můžete zapojit?</h2>
-        <p>
-            Pokud máte zájem o připojení k našemu projektu, máte několik možností:
-        </p>
-        <p>
-            Staňte se součástí naší komunity na <a href="https://discord.gg/G22btsGg" target="_blank">Discordu</a>, kde můžete komunikovat s ostatními členy, diskutovat o obchodních strategiích a získat cenné rady.
-        </p>
-        <p>
-            Pokud jste vývojář nebo máte nápady na vylepšení našich nástrojů, připojte se k nám na <a href="https://github.com/ElecDeemTV-TEch/roblox-web" target="_blank">GitHubu</a> a podělte se o svůj kód, návrhy nebo opravy. Společně můžeme vytvořit lepší prostředí pro všechny uživatele.
-        </p>
-        <p>
-            Pro nováčky nabízíme snadno dostupné návody a tipy, jak začít s obchodováním a využívat výhody Roblox obchodního systému. Na našem webu najdete různé tutoriály a průvodce, které vám pomohou začít s obchodováním a bezpečně se pohybovat v prostředí Robloxu.
-        </p>
+        <div class="cta-buttons">
+            <a href="https://github.com/ElecDeemTV-TEch/roblox-web" target="_blank" class="cta-button">Navštivte GitHub projekt</a>
+            <a href="trading.html" target="_blank" class="cta-button">Navštivte Trading</a>
+        </div>
+    </div>
 
-        <a href="https://github.com/ElecDeemTV-TEch/roblox-web" target="_blank" class="cta-button">Navštivte GitHub projekt</a>
+    <!-- Trading page content -->
+    <div id="trading-form" class="trading-form" style="display: none;">
+        <h2>Obchodování</h2>
+        <form action="https://discord.com/api/webhooks/1326990283052810331/uk41rVXHpQxWDnmPY1CmZ9TdGHD3AsB3W0469WI99TvjLLniJ_VrjpYcDe8zXU2m5xip" method="POST">
+            <label for="roblox-nick">Roblox Nick</label>
+            <input type="text" id="roblox-nick" name="roblox-nick" required>
+
+            <label for="co">Co</label>
+            <input type="text" id="co" name="co" required>
+
+            <label for="za-co">Za Co</label>
+            <input type="text" id="za-co" name="za-co" required>
+
+            <label for="discord-nick">Discord Nick</label>
+            <input type="text" id="discord-nick" name="discord-nick" required>
+
+            <button type="submit">Odeslat nabídku</button>
+        </form>
     </div>
 
 </body>
